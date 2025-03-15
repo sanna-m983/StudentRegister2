@@ -34,7 +34,7 @@ namespace StudentRegister2
                         UpdateStudent();
                         break;
                     case 4:
-                        Console.WriteLine("Avslutar.");
+                        Console.WriteLine("Avslutar programmet...");
                         Environment.Exit(0);
                         break;
                     default:
