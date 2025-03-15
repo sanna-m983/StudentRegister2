@@ -14,11 +14,12 @@ namespace StudentRegister2
             do
             {
                 Console.WriteLine("Välj ett av följande alternativ:");
-                Console.WriteLine("***************************");
+                Console.WriteLine("********************************");
                 Console.WriteLine("1. Registrera ny student");
                 Console.WriteLine("2. Lista alla studenter");
                 Console.WriteLine("3. Ändra student");
                 Console.WriteLine("4. Avsluta");
+                Console.WriteLine("********************************");
                 userChoice = int.Parse(Console.ReadLine());
                 
                 switch (userChoice)
