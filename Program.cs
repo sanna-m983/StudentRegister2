@@ -10,7 +10,6 @@ namespace StudentRegister2
         {
             StudentRegister studentRegister = new StudentRegister();
             studentRegister.MainMenu();
-            //Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Students2; Integrated Security = True; Connect Timeout = 30; Encrypt = False; Trust Server Certificate = False; Application Intent = ReadWrite; Multi Subnet Failover = False
         }
     }
 }
