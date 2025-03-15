@@ -13,12 +13,14 @@ namespace StudentRegister2
             int userChoice = 0;
             do
             {
-                Console.WriteLine("Välj ett alternativ:");
-                Console.WriteLine("1. Registrera en ny student");
+                Console.WriteLine("Välj ett av följande alternativ:");
+                Console.WriteLine("***************************");
+                Console.WriteLine("1. Registrera ny student");
                 Console.WriteLine("2. Lista alla studenter");
-                Console.WriteLine("3. Ändra en student");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("3. Ändra student");
+                Console.WriteLine("4. Avsluta");
                 userChoice = int.Parse(Console.ReadLine());
+                
                 switch (userChoice)
                 {
                     case 1:
@@ -45,11 +47,11 @@ namespace StudentRegister2
         {
             StudentDbContext std = new StudentDbContext();
             Student student = new Student();
-            Console.WriteLine("Förnamn:");
+            Console.WriteLine("Ange förnamn:");
             string firstName = Console.ReadLine();
-            Console.WriteLine("Efternamn:");
+            Console.WriteLine("Ange efternamn:");
             string lastName = Console.ReadLine();
-            Console.WriteLine("Stad");
+            Console.WriteLine("Ange stad");
             string city = Console.ReadLine();
             student.FirstName = firstName;
             student.LastName = lastName;
@@ -79,11 +81,11 @@ namespace StudentRegister2
 
                 if (student != null)
                 {
-                    Console.Write("Nytt förnamn: ");
+                    Console.Write("Ange nytt förnamn: ");
                     student.FirstName = Console.ReadLine();
-                    Console.Write("Nytt efternamn: ");
+                    Console.Write("Ange nytt efternamn: ");
                     student.LastName = Console.ReadLine();
-                    Console.Write("Ny stad: ");
+                    Console.Write("Ange ny stad: ");
                     student.City = Console.ReadLine();
 
                     std.SaveChanges();
